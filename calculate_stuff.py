@@ -14,9 +14,10 @@ class CalculateStuff:
                        datefmt='%m/%d/%Y %I:%M:%S %p')
 
     def max_diff(self):
-        """Returns the maximum absolute difference between two adjacent numbers
+        """Returns maximum absolute difference between 2 adjacent numbers
         :param input_list: a list of numbers
-        :returns max_val: maximum absolute difference between two adjacent numbers
+        :returns max_val: maximum absolute difference between 2
+                            adjacent numbers
         :raises ImportError: if required modules are not found
         :raises TypeError: if input_list contains anything other than numbers
         :raises ValueError: if input_list contains less than two values
@@ -61,7 +62,6 @@ class CalculateStuff:
             print('An unknown error occurred.')
             lg.warning(' | WARNING: OMG AN UNKNOWN ERROR OCCURRED!')
             raise
-
 
     # To calculate the sum of list of numbers
     def sum_nums(self):
@@ -110,7 +110,6 @@ class CalculateStuff:
             lg.warning(' | WARNING: UNKNOWN error occured.')
             raise
 
-
     # returns a tuple of the min and max values in a list
     def min_max(self):
             """Returns a tuple of the minimum and maximum numbers in a list
@@ -151,8 +150,8 @@ class CalculateStuff:
                 lg.debug(" | ABORTED: [ImportError] %s" % ie.name)
                 raise ImportError("%s module not found." % ie.name)
             except TypeError:
-                lg.debug(" | ABORTED: [TypeError] input_list is %s " % input_list)
-                raise TypeError("Input contains elements that are not integers or "
+                lg.debug(" | ABORTED: [TypeError] Input is %s " % input_list)
+                raise TypeError("Input has elements that are not integers or "
                                 "floats.")
             except ValueError:
                 lg.debug(" | ABORTED: [ValueError] min_max_val does not exist")

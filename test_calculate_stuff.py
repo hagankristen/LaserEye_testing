@@ -19,7 +19,7 @@ def test_calculate_stuff():
     assert(np.isclose(alist3.max_diff(), 14))
     assert(alist3.min_max() == (-7, 15))
 
-    alist4 = CalculateStuff([9,'h', 8])
+    alist4 = CalculateStuff([9, 'h', 8])
     with pytest.raises(TypeError):
         alist4.max_diff()
     with pytest.raises(TypeError):
