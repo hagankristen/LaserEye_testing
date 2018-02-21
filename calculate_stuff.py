@@ -13,7 +13,7 @@ class CalculateStuff:
                        format='%(asctime)s %(message)s',
                        datefmt='%m/%d/%Y %I:%M:%S %p')
 
-    def max_diff(self):
+    def calc_max_diff(self):
         """Returns maximum absolute difference between 2 adjacent numbers
         :param input_list: a list of numbers
         :returns max_val: maximum absolute difference between 2
@@ -29,7 +29,7 @@ class CalculateStuff:
             import numpy as np
             import logging as lg
 
-            lg.basicConfig(filename='max_diff.log',
+            lg.basicConfig(filename='calc_max_diff.log',
                            level=lg.DEBUG,
                            format='%(asctime)s %(message)s',
                            datefmt='%m/%d/%Y %I:%M:%S %p')
@@ -44,7 +44,7 @@ class CalculateStuff:
             lg.info(' | SUCCESS: input_list %s returned %g'
                     % (input_list, max_val))
 
-            self.max_diff= max_val
+            self.max_diff = max_val
             return self.max_diff
 
         except ImportError as e:
@@ -66,7 +66,7 @@ class CalculateStuff:
             raise
 
     # To calculate the sum of list of numbers
-    def sum_nums(self):
+    def calc_sum_nums(self):
         """Returns sum of numbers in an input list
         :param input_list: list of input numbers
         :returns ans: sum of numbers in input list
@@ -80,7 +80,7 @@ class CalculateStuff:
             import numpy as np
             import logging as lg
 
-            lg.basicConfig(filename='sum_nums.log',
+            lg.basicConfig(filename='calc_sum_nums.log',
                            level=lg.DEBUG,
                            format='%(asctime)s %(message)s',
                            datefmt='%m/%d/%Y %I:%M:%S %p')
@@ -114,7 +114,7 @@ class CalculateStuff:
             raise
 
     # returns a tuple of the min and max values in a list
-    def min_max(self):
+    def calc_min_max(self):
             """Returns a tuple of the minimum and maximum numbers in a list
 
             :param input_list: a list of numbers
@@ -130,7 +130,7 @@ class CalculateStuff:
                 import numpy as np
                 import logging as lg
 
-                lg.basicConfig(filename='min_max.log',
+                lg.basicConfig(filename='calc_min_max.log',
                                level=lg.DEBUG,
                                format='%(asctime)s %(message)s',
                                datefmt='%m/%d/%Y %I:%M:%S %p')
