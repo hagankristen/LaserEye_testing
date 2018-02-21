@@ -86,6 +86,9 @@ class CalculateStuff:
                            datefmt='%m/%d/%Y %I:%M:%S %p')
 
             input_list = self.input_list
+            if not input_list:
+                print("Type Error. Empty List.")
+                raise ValueError
             ans = np.sum(input_list)
             if np.isnan(ans):
                 print("Type Error. NaN value returned.")
