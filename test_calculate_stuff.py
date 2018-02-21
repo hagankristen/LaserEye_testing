@@ -29,7 +29,7 @@ def test_calculate_stuff():
         alist4.calc_min_max()
 
     with pytest.raises(ImportError):
-        import random
+        import Random
 
     alist5 = CalculateStuff([])
     with pytest.raises(ValueError):
