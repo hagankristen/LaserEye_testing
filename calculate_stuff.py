@@ -1,5 +1,4 @@
 import logging as lg
-import numpy as np
 
 
 class CalculateStuff:
@@ -26,6 +25,9 @@ class CalculateStuff:
         """
 
         try:
+
+            import numpy as np
+            import logging as lg
 
             lg.basicConfig(filename='calc_max_diff.log',
                            level=lg.DEBUG,
@@ -74,6 +76,9 @@ class CalculateStuff:
         """
 
         try:
+
+            import numpy as np
+            import logging as lg
 
             lg.basicConfig(filename='calc_sum_nums.log',
                            level=lg.DEBUG,
@@ -124,6 +129,9 @@ class CalculateStuff:
             """
 
             try:
+
+                import numpy as np
+                import logging as lg
 
                 lg.basicConfig(filename='calc_min_max.log',
                                level=lg.DEBUG,
