@@ -18,6 +18,7 @@ class CalculateStuff:
 
     def calc_max_diff(self):
         """Returns maximum absolute difference between 2 adjacent numbers
+
         :param input_list: a list of numbers
         :returns max_val: maximum absolute difference between 2
                             adjacent numbers
@@ -71,6 +72,7 @@ class CalculateStuff:
     # To calculate the sum of list of numbers
     def calc_sum_nums(self):
         """Returns sum of numbers in an input list
+
         :param input_list: list of input numbers
         :returns ans: sum of numbers in input list
         :raises ImportError: required module is not found
@@ -124,7 +126,6 @@ class CalculateStuff:
             """Returns a tuple of the minimum and maximum numbers in a list
 
             :param input_list: a list of numbers
-
             :returns min_max_val: tuple of minimum and maximum number
             :raises ImportError: required modules are not available
             :raises TypeError: input_list contains non-numerical data types
