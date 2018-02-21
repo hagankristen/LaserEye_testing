@@ -1,3 +1,6 @@
+import logging as lg
+
+
 class CalculateStuff:
     def __init__(self, input_list):
         self.input_list = input_list

@@ -32,8 +32,8 @@ def test_calculate_stuff():
 
     alist5 = CalculateStuff([])
     with pytest.raises(ValueError):
-        alist5.sum_nums();
+        alist5.sum_nums()
     with pytest.raises(ValueError):
-        alist5.max_diff();
+        alist5.max_diff()
     with pytest.raises(ValueError):
-        alist5.min_max();
+        alist5.min_max()
