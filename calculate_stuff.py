@@ -43,7 +43,9 @@ class CalculateStuff:
 
             lg.info(' | SUCCESS: input_list %s returned %g'
                     % (input_list, max_val))
-            return max_val
+
+            self.max_diff= max_val
+            return self.max_diff
 
         except ImportError as e:
             print('ImportError: %s module not found.' % e.name)
@@ -90,7 +92,8 @@ class CalculateStuff:
                 raise ValueError
             lg.info(' | SUCCESS: sum_nums returned %g'
                     % (ans))
-            return ans
+            self.sum = ans
+            return self.sum
 
         except IOError as ie:
             print("I/O Error. Module not found.")
@@ -144,7 +147,8 @@ class CalculateStuff:
 
                 lg.info(' | SUCCESS: min_max of %s is %s' % (input_list,
                                                              min_max_val))
-                return min_max_val
+                self.min_max = min_max_val
+                return self.min_max
 
             except ImportError as ie:
                 lg.debug(" | ABORTED: [ImportError] %s" % ie.name)
