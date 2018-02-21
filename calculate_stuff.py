@@ -1,6 +1,3 @@
-import logging as lg
-
-
 class CalculateStuff:
     def __init__(self, input_list):
         self.input_list = input_list
@@ -8,10 +5,16 @@ class CalculateStuff:
         self.max_diff = None
         self.min_max = None
 
-        lg.basicConfig(filename='calculate_stuff_init.log',
-                       level=lg.DEBUG,
-                       format='%(asctime)s %(message)s',
-                       datefmt='%m/%d/%Y %I:%M:%S %p')
+        try:
+            import logging as lg
+            lg.basicConfig(filename='calculate_stuff_init.log',
+                           level=lg.DEBUG,
+                           format='%(asctime)s %(message)s',
+                           datefmt='%m/%d/%Y %I:%M:%S %p')
+        except ImportError as e:
+            print('ImportError: %s module not found.' % e.name)
+            lg.debug(' | ABORTED: ImportError: %s' % e.name)
+            raise ImportError
 
     def calc_max_diff(self):
         """Returns maximum absolute difference between 2 adjacent numbers
