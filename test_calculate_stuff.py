@@ -2,7 +2,7 @@ import numpy as np
 import pytest
 from calculate_stuff import CalculateStuff
 
-def test_calculate_stuff:
+def test_calculate_stuff():
 
     alist1 = CalculateStuff([1, 2, 3, 4, 5])
     assert(np.isclose(alist1.sum_nums(), 15))
@@ -36,4 +36,4 @@ def test_calculate_stuff:
     with pytest.raises(ValueError):
         alist5.max_diff();
     with pytest.raises(ValueError):
-        alist5.min_max();        
+        alist5.min_max();
