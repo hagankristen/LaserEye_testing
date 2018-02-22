@@ -1,16 +1,18 @@
-.. Assignment 5 documentation master file, created by
-   sphinx-quickstart on Fri Feb 16 00:13:11 2018.
+.. Mod documentation master file, created by
+   sphinx-quickstart on Wed Feb 21 15:15:51 2018.
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to Assignment 5's documentation!
-========================================
+Welcome to Mod's documentation!
+===============================
 
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
 
-
+   modules
+   test_calculate_stuff
+   calculate_stuff
 
 Indices and tables
 ==================
