@@ -1,6 +1,6 @@
+from calculate_stuff import CalculateStuff
 import numpy as np
 import pytest
-from calculate_stuff import CalculateStuff
 
 
 def test_calculate_stuff():
