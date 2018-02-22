@@ -19,14 +19,14 @@ sys.path.insert(0, os.path.abspath('..'))
 
 # -- Project information -----------------------------------------------------
 
-project = u'Assignment 5'
-copyright = u'2018, David Li'
-author = u'David Li'
+project = 'Module'
+copyright = '2018, Kristen'
+author = 'Kristen'
 
 # The short X.Y version
-version = u''
+version = ''
 # The full version, including alpha/beta/rc tags
-release = u''
+release = '1'
 
 
 # -- General configuration ---------------------------------------------------
@@ -40,7 +40,6 @@ release = u''
 # ones.
 extensions = [
     'sphinx.ext.autodoc',
-    'sphinx.ext.githubpages',
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -65,7 +64,7 @@ language = None
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
 # This pattern also affects html_static_path and html_extra_path .
-exclude_patterns = [u'_build', 'Thumbs.db', '.DS_Store']
+exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 
 # The name of the Pygments (syntax highlighting) style to use.
 pygments_style = 'sphinx'
@@ -103,7 +102,7 @@ html_static_path = ['_static']
 # -- Options for HTMLHelp output ---------------------------------------------
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'Assignment5doc'
+htmlhelp_basename = 'Moduledoc'
 
 
 # -- Options for LaTeX output ------------------------------------------------
@@ -130,8 +129,8 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'Assignment5.tex', u'Assignment 5 Documentation',
-     u'David Li', 'manual'),
+    (master_doc, 'Module.tex', 'Module Documentation',
+     'Kristen', 'manual'),
 ]
 
 
@@ -140,7 +139,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'assignment5', u'Assignment 5 Documentation',
+    (master_doc, 'module', 'Module Documentation',
      [author], 1)
 ]
 
@@ -151,8 +150,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 'Assignment5', u'Assignment 5 Documentation',
-     author, 'Assignment5', 'One line description of project.',
+    (master_doc, 'Module', 'Module Documentation',
+     author, 'Module', 'One line description of project.',
      'Miscellaneous'),
 ]
 
